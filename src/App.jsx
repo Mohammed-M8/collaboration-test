@@ -16,9 +16,10 @@ const App = () => {
 
   return (
     <>
+      <p> I am a change</p>
       <NavBar />
       <Routes>
-        <Route path='/' element={user ? <Dashboard /> : <Landing/> } />
+        <Route path='/' element={user ? <Dashboard /> : <Landing />} />
         <Route path='/sign-up' element={<SignUpForm />} />
         <Route path='/sign-in' element={<SignInForm />} />
       </Routes>
